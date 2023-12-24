@@ -3,7 +3,6 @@ import { Reducer } from 'react';
 
 export const reducer: Reducer<State, Action> = (state, action) => {
     if (action.type === 'ADD_TOAST') {
-        console.log(action);
         return {
             ...state,
             toasts: [...state.toasts, action.toast],
