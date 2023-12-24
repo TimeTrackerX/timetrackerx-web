@@ -2,11 +2,9 @@ import { FC } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 import NavigationLink from './NavigationLink.tsx';
-// import { Link } from 'react-router-dom';
-
-const Link: FC<{ to: unknown }> = () => null;
 
 const NavigationBar: FC = () => {
     return (
