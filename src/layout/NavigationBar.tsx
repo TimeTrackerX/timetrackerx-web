@@ -1,3 +1,4 @@
+import GoogleAuthBtn from '@app/components/auth/GoogleAuthBtn.tsx';
 import { FC } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -19,7 +20,9 @@ const NavigationBar: FC = () => {
                         <NavigationLink to="/">Home</NavigationLink>
                         <NavigationLink to="/dashboard">Dashboard</NavigationLink>
                     </Nav>
-                    <Nav className="ms-auto">{/*<DiscordAuthBtn />*/}</Nav>
+                    <Nav className="ms-auto">
+                        <GoogleAuthBtn />
+                    </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
